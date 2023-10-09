@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Foodee Junction</title>
+</head>
+
+<body>
+
+    <div class="container1" id="top">
+
+        <nav class="navigation">
+
+            <!-- Logo -->
+            <div class="logo">
+                <img src="./images/foodee-logo.png" alt="Foodee logo">
+            </div>
+
+            <!-- navigation buttons  -->
+
+            <!-- for desktop -->
+
+            <ul class="navigation-btns">
+                <li><a href="#">WHAT'S ON FJ</a></li>
+                <li><a href="#">TODAY'S MENU</a></li>
+                <li><a href="#">DEALS</a></li>
+
+                <li><a id="takeaway" href="#">Delivery/Takeaway</a></li>
+                <li class="far fa-user-circle"><a href="#"> LOGIN
+                    </a></li>
+            </ul>
+            <!-- navigation button for mobile view -->
+
+            <label for="nav-btn"><img src="./images/foodee-btn.png" alt=""></label>
+        </nav>
+
+
+    </div>
+
+    <!-- Navigation -->
+    <input type="checkbox" class="nav-btn" id="nav-btn">
+    <div class="mobile-menu">
+
+        <div class="navigation-btns-mobile">
+
+            <div class="cross"> <label for="nav-btn"><i class="fa-solid fa-x fa-xl" style="color: #ff8800;"></i></label>
+            </div>
+            <div class="login">
+                <li class="far fa-user-circle"><a href="#"> LOGIN
+                    </a></li>
+            </div>
+            <hr>
+            <section class="mobile-links">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Delivery/Takeaway</a></li>
+                    <li><a href="">Today's Menu</a></li>
+                    <li><a href="">What's on FJ</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Blogs</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Corprate Enquiry</a></li>
+                    <li><a href="">Media Coverage</a></li>
+                    <li><a href="">Foodee Junction Partnership</a></li>
+                    <li><a href="">investor Relation</a></li>
+
+
+                </ul>
+            </section>
+
+        </div>
+    </div>
+
+
+    <!-- Landing page -->
+
+    <div class="container2" style="background-image: url('./images/landing-banner2.jpg');">
+
+        <section class="landing">
+
+            <div class="slogan">
+                <h1>Taste the difference</h1>
+            </div>
+            <div class="reservation">
+                <div class="r1">
+                    <h2>Let us serve you better</h2>
+                    <p>Don’t wait in a line to enjoy your meal.</p>
+                    <p>Reserve a table in advance with us.</p>
+                </div>
+                <form>
+
+                    <div class="r2">
+                        <label for="loc"> Location</label>
+                        <select name="" id="loc">
+
+                            <option selected disabled hidden>select a location</option>
+                            <option value="">loc1</option>
+                            <option value="">loc2</option>
+                            <option value="">loc3</option>
+                            <option value="">loc3</option>
+                        </select>
+                    </div>
+
+                    <div class="r3">
+                        <label for="date">Date</label>
+                        <button class="today">Today</button>
+                        <button class="tmro">Tomorrow</button>
+                        <input type="date" value="2023-04-08">
+                    </div>
+                    <div class="r4">
+                        <label for="time">Session</label>
+                        <button class="lunch">Lunch</button>
+                        <button class="dinner">Dinner</button>
+                        <input type="time" value="00:00">
+
+                    </div>
+                    <!-- btn for desktop view -->
+                    <div class="desk-btn">
+                        <button><i class="fa-solid fa-bell-concierge fa-beat fa-2xl" style=" color: #ffffff;"></i><br>
+                            <br> Reserve <br> Table</button>
+                    </div>
+
+                </form>
+                <!-- btn for mobile view -->
+                <div class="mobile-btn">
+                    <button><i class="fa-solid fa-bell-concierge fa-beat fa-2xl" style=" color: #ffffff;"></i><br>
+                        <br> Reserve <br> Table</button>
+                </div>
+            </div>
+
+
+        </section>
+    </div>
+
+
+    <div class="conatainer3">
+
+        <h1>OUR SERVICES</h1>
+        <section class="middle">
+            <div class="service">
+
+                <img src="./images/menu2.jpg" alt="menu image">
+
+                <div class="overlay">
+                    <h1><u>Today Menu</u></h1>
+                    <p>Indulge in a variety of flavors with our restaurant's extensive menu. From savory appetizers to
+                        mouth-watering entrees and delectable desserts, we offer something for every palate. Our chefs
+                        use only the freshest ingredients to create dishes that are both delicious and satisfying.
+                        Whether you're in the mood for classic comfort food or something more adventurous, our menu has
+                        got you covered. Come and explore our menu today!"</p>
+                    <a class="btn" href="#">Explore now</a>
+                </div>
+
+            </div>
+
+            <div class="service">
+                <img src="./images/delivery.avif" alt="delivery image">
+
+                <div class="overlay">
+                    <h1><u>Fast & Free Delivery</u></h1>
+                    <p>Enjoy the taste of our restaurant from the comfort of your own home with our reliable delivery
+                        service. Our team of experienced drivers ensure that your food arrives at your doorstep quickly
+                        and safely, so you can enjoy your favorite dishes without having to leave your house. Place your
+                        order now and experience the convenience of our delivery service!</p>
+                    <a class="btn" href="#">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="service">
+
+                <img src="./images/party2.jpg" alt="party image">
+
+                <div class="overlay">
+                    <h1><u>Party Order</u></h1>
+                    <p>Let us take care of the food for your next event with our hassle-free party order service. Our
+                        team can provide delicious dishes in large quantities, perfect for parties and gatherings of all
+                        sizes. we have a range of options to suit every occasion. Our reliable and timely delivery
+                        service ensures that your food will arrive fresh and ready to serve. Make your event a success
+                        with our party order service today</p>
+                    <a class="btn" href="#">LEARN MORE</a>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <!-- testimonials custmoer reiews -->
+
+    <div class="container4">
+        <h1>OUR CUSTMER REVIEWS</h1>
+        <section class="reviews">
+
+            <!-- <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i> gold star -->
+            <div class="review">
+                <div class="image-container"><img src="./images/propic1.jpeg" alt="profile pic"></div>
+                <h4>Rahul RK</h4>
+                <p>
+                    <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #000;"></i>
+                </p>
+                <p>Had a great experience at Foodee Junction! The food was delicious and the staffs was very welcoming.
+                    I Highly recommend the butter chicken & the garlic naan.</p>
+
+            </div>
+            <div class="review">
+                <div class="image-container"><img src="./images/propic2.jpeg" alt="profile pic"></div>
+                <h4>Aishwarya Lekshmi</h4>
+                <p>
+                    <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #000;"></i>
+                </p>
+                <p>I'm so glad I found Foodee Junction! The food consistently great, and the service is always friendly
+                    and attentive. Don't miss out on the lamb vindaloo - it's the perfect amount of spice!</p>
+
+            </div>
+            <div class="review">
+                <div class="image-container"><img src="./images/propic4.jpeg" alt="profile pic"></div>
+                <h4>Sreejith CK</h4>
+                <p>
+                    <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #000;"></i>
+                </p>
+                <p>Foodee Junction never disappoints!The portions are generous and the flavors are spot-on. The samosas
+                    are a must-try and the mango lassi is the perfect sweet treat to end your meal.</p>
+
+            </div>
+            <div class="review">
+                <div class="image-container"><img src="./images/propic3.jpeg" alt="profile pic"></div>
+                <h4>Riswan</h4>
+                <p>
+                    <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+
+                </p>
+                <p>Foodee Junction is my go-to spot for Indian takeout. The ordering process is always quick and easy,
+                    and the food is always delicious. The chicken tikka masala is a crowd-pleaser!</p>
+
+            </div>
+            <div class="review">
+                <div class="image-container"><img src="./images/propic5.jpg" alt="profile pic"></div>
+                <h4>Malavika</h4>
+                <p>
+                    <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #fbff00;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #000;"></i>
+                </p>
+                <p style="">If you're looking for authentic Indian food, Foodee Junction is the place to go. The biryani
+                    is a
+                    personal favorite, and the chai tea is the perfect pick-me-up."</p>
+
+            </div>
+        </section>
+    </div>
+
+    <div class="footer">
+        <div class="main-links">
+            <div class="col col1">
+                <div class="row row1">
+                    <ul>
+                        <li><a href="#">Our story</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">careers</a></li>
+                        <li><a href="">faq</a></li>
+                        <li><a href="#">investor relation</a></li>
+                        <li><a href="#">F J Partnership</a></li>
+
+                    </ul>
+
+                </div>
+                <div class="row row2">
+                    <ul>
+                        <li><a href="#">Locations</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">what's on FJ</a></li>
+                        <li><a href="#">contact us</a></li>
+                        <li><a href="#">media coverage</a></li>
+                        <li><a href="#">Nutition information</a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="row row3">
+                    <ul>
+                        <li>Reach us</li>
+                        <li><span>call us</span><br><a href="#">+91 9988776655</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="col col2">
+                <ul>
+                    <li>download the app</li>
+                    <li>
+                        <!-- appstore image -->
+                        <span><a href=""><img src="./images/appstore.webp" alt="get it on apptore image"></a></span>
+                        <!--  google play image-->
+                        <span><a href=""><img src="./images/googleplay.webp"
+                                    alt="get it on googleplay image"></a></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="socials">
+
+            <div class="col1">
+                <img src="./images/foodee-logo-short.png" alt="image of our logo">
+            </div>
+            <div class="col2">
+                <span>&#169; 2023 Foodee Junction Ltd.</span>
+            </div>
+            <div class="col2">
+                <span>
+                    <a href="">Terms & Conditions</a>
+                </span>
+                <span>
+                    <a href="">Privacy Policy</a>
+                </span>
+            </div>
+            <div class="col3">
+                <span><a href=""><i class="fa-brands fa-facebook fa-lg " style="color: #ff8800;"></i></a></span>
+
+                <span><a href=""><i class="fa-brands fa-instagram fa-lg" style="color: #ff8800;"></i></a></span>
+
+                <span><a href=""><i class="fa-brands fa-twitter fa-lg" style="color: #ff8800;"></i></a></span>
+
+                <span><a href=""><i class="fa-brands fa-youtube fa-lg" style="color: #ff8800;"></i></a></span>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

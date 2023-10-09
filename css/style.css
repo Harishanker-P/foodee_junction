@@ -1,0 +1,647 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+/* Remove the default style and more */
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    white-space: normal;
+}
+
+/* ************************************************************** */
+
+/* navigation container */
+
+.container1 {
+    /* vh */
+    height: 15%;
+    width: 100%;
+
+}
+
+/* navigation bar */
+.navigation {
+    background-color: whitesmoke;
+    height: 15%;
+    /* height: 15vh;  */
+    width: 100%;
+    position: fixed;
+    border-bottom: .5px solid rgba(0, 0, 0, 0.315);
+    display: flex;
+    align-items: center;
+    top: 0;
+    z-index: 9999;
+}
+
+/* website logo */
+.navigation .logo {
+    height: 100%;
+    max-width: 35vh;
+    min-width: 200px;
+}
+
+.navigation .logo img {
+    width: 100%;
+    margin-top: auto;
+}
+
+
+
+
+/* navigation buttons and styles */
+
+.navigation .navigation-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.navigation-btns li {
+    list-style-type: none;
+    padding: 30px;
+}
+
+.navigation-btns li a {
+    text-decoration: none;
+    color: black;
+    font-size: 90%;
+    font-weight: 500;
+}
+
+.navigation-btns a:hover {
+    color: orangered;
+}
+
+.navigation-btns #takeaway {
+    background-color: rgba(255, 68, 0, 0.925);
+    padding: 15px;
+    color: white;
+    border-radius: 20px;
+}
+
+.navigation-btns #takeaway:hover {
+    background-color: rgb(255, 55, 0);
+    padding: 15px;
+    color: white;
+    border-radius: 20px;
+}
+
+/* btn for mobile view need not to display on desktop*/
+.navigation label,
+.nav-btn {
+    display: none;
+}
+
+
+.navigation .navigation-btns-mobile {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media only screen and (max-width: 1040px) {
+
+    /*  hiding btns of desktop view*/
+    .navigation .navigation-btns {
+        display: none;
+    }
+
+    .navigation .logo {
+        width: 200px;
+    }
+
+    .navigation label {
+        cursor: pointer;
+    }
+
+    .navigation label {
+        display: block;
+
+        position: absolute;
+        right: 0;
+    }
+
+    .navigation label img {
+        display: block;
+        width: 70px;
+    }
+
+    /* checkbox button funtionality   */
+    input[type="checkbox"]:checked~.mobile-menu {
+        display: block;
+        transition: .4s, smooth;
+    }
+
+    /* styling the mobile menu */
+
+    .mobile-menu {
+        z-index: 999999999999;
+        position: fixed;
+        top: 0;
+        background-color: white;
+        border: 1px solid orangered;
+        padding: 20px;
+        height: 100%;
+        right: 0;
+        width: 75%;
+    }
+
+    .mobile-menu .cross {
+
+        float: right;
+    }
+
+    .cross label,
+    li {
+        cursor: pointer;
+    }
+
+    .mobile-menu .login a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    .mobile-menu hr {
+        margin-top: 15px;
+        background-color: orangered;
+    }
+
+    .mobile-menu .mobile-links {
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    .mobile-links li {
+        list-style: none;
+        padding: 15px;
+    }
+
+    .mobile-links li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .mobile-links ul :first-child a {
+        color: orangered;
+        text-decoration: underline;
+    }
+
+    .mobile-links li a:hover {
+        color: orangered;
+    }
+
+}
+
+/* ************************************************************** */
+/* landing section */
+
+.container2 {
+   
+    height: 100vh;
+    width: 100%;
+    /* min-height: 1000px; */
+    background-image: url("./images/landing-banner2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: contain; */
+    background-attachment: fixed;
+    margin-top: 7%;
+}
+
+.landing {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.landing .slogan {
+    margin: 15% auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: orangered;
+}
+
+.landing .slogan h1 {
+    margin-top: 20px;
+    font-size: 3em;
+}
+
+.landing .reservation {
+
+    margin: auto auto;
+    margin-top: 30px;
+    /* min-width: 400px; */
+    height: auto;
+    background-color: aliceblue;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px 10px black;
+}
+
+.landing .reservation p {
+    margin-top: 25px;
+}
+
+.landing form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.landing form input,
+select,
+button {
+    display: inline-block;
+    /* margin: 0 10px; */
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+.landing form button:hover {
+    background-color: rgb(255, 68, 0);
+
+}
+
+
+label {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+
+.landing div {
+    height: 90px;
+    /* background-color: red; */
+    padding: 10px;
+}
+
+
+
+.landing {
+    font-weight: lighter;
+    line-height: 10px;
+}
+
+
+
+.landing form .desk-btn {
+    /* code */
+}
+
+.landing form .desk-btn button {
+
+    padding: 30px;
+    margin-top: 1px;
+    border-radius: 50%;
+    background-color: orangered;
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: 120px;
+    border: 0px solid green;
+    cursor: pointer
+}
+
+
+
+/* table reserve btn for mobile */
+.landing .mobile-btn {
+    display: none;
+}
+
+/* media qury for landign */
+
+@media only screen and (max-width: 1040px) {
+
+    .landing {
+
+        justify-content: space-evenly;
+        text-align: center;
+
+    }
+
+    .landing .reservation {
+        margin-top: auto;
+    }
+
+    .landing .slogan h1 {
+        font-size: 2rem;
+    }
+
+    .landing .reservation form {
+        display: none;
+    }
+
+    .landing .mobile-btn {
+        display: block;
+    }
+
+    .landing .mobile-btn button {
+        padding: 30px;
+        margin-top: 1px;
+        border-radius: 50%;
+        background-color: orangered;
+        font-weight: bold;
+        /* margin-right: auto; */
+        /* margin-left: auto; */
+
+        cursor: pointer
+    }
+}
+
+
+/* ************************************************************** */
+
+/* Middle section  */
+
+
+.conatainer3 {
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.conatainer3 h1 {
+    background-color: orangered;
+    color: whitesmoke;
+    text-align: center;
+
+
+}
+
+.conatainer3 .middle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 54px 0;
+    /* align-items: center; */
+}
+
+
+.conatainer3 .middle .service {
+    position: relative;
+    height: 50%;
+    width: 30%;
+    min-width: 300px;
+    min-height: 400px;
+    margin: 20px;
+    border: 1px solid red;
+
+}
+
+.conatainer3 .middle img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.overlay {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.872);
+    color: orangered;
+    opacity: 0;
+}
+
+.overlay p {
+    font-weight: 600;
+    text-align: justify;
+    line-height: 30px;
+
+}
+
+.overlay .btn {
+    display: block;
+    text-decoration: none;
+    background-color: orangered;
+    color: white;
+    width: 30%;
+    margin: 0 auto;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.conatainer3 .middle .service:hover .overlay {
+    opacity: 1;
+}
+
+/* media query for middle section */
+
+@media only screen and (max-width: 1040px) {
+
+    .overlay {
+        font-size: small;
+    }
+}
+
+/* ************************************************************** */
+/* customer review / testimonial */
+
+.container4 {
+    height: 70;
+    width: 100%;
+    /* margin:0 2px; */
+}
+
+
+
+
+.container4 h1:first-child {
+    background-color: orangered;
+    color: whitesmoke;
+    text-align: center;
+
+}
+
+.container4 .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    align-items: baseline;
+    height: fit-content;
+
+
+    /* width: 100vw; */
+
+
+}
+
+.container4 .reviews .review {
+
+    margin: 20px;
+    margin-top: 40px;
+    padding: 10px;
+    display: flex;
+    height: fit-content;
+    width: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+
+    position: relative;
+}
+
+.review .image-container {
+    height: 60px;
+    width: 100%;
+
+    width: auto;
+
+}
+
+.review img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: -30px;
+    left: 50px;
+    border: 2px solid orangered;
+}
+
+.review p {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: medium;
+    font-weight: 600;
+    text-align: justify;
+}
+
+.review:hover {
+    /* transform: rotateY(360deg); */
+    transform: scale(105%);
+    transition: .5s ease;
+
+}
+
+/* media query for reviews */
+@media only screen and (max-width: 1040px) {
+
+    /* code here */
+
+}
+
+/* ************************************************************** */
+
+
+
+/* footer */
+
+.footer {
+    background-color: black;
+    /* height: 100%; */
+    width: 100%;
+    margin-top: px;
+}
+
+.footer .main-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.footer .main-links li {
+    list-style: none;
+    color: white;
+    line-height: 30px;
+}
+
+.footer .main-links a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+
+.footer .main-links span {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+
+.footer .main-links a:hover {
+
+    color: orangered;
+
+}
+
+.main-links .col1 {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+}
+
+.col1 .row {
+    margin: 10px;
+    text-align: left;
+}
+
+.main-links .col2 li:nth-child(2) {
+    margin-top: 10px;
+
+
+}
+
+.footer .socials {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    margin-bottom: 0;
+}
+
+.socials .col1 {
+    width: 200px;
+}
+
+.socials .col1 img {
+    width: 100%;
+}
+
+.socials a {
+    text-decoration: none;
+    color: white;
+    margin: 6px;
+}
+
+.socials span {
+    color: white;
+}
+
+/* media query for footer */
+@media only screen and (max-width: 1040px) {
+
+    .footer .socials .col1,
+    .socials .col2 {
+        display: none;
+    }
+
+    .footer .socials .col3 span {
+        padding: 0 20px;
+    }
+
+}
